@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <form>
-       <h2 class="text-center">THÊM SACSC MỚI</h2>
+       <h2 class="text-center">THÊM SÁCH MỚI</h2>
          <div class="container p-3 my-3 border text-center border border-primary">
 
         <div class="form-group row mb-2">
