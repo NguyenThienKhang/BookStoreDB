@@ -24,13 +24,13 @@ namespace BookStoreDB
         protected global::System.Web.UI.WebControls.TextBox txtTen;
 
         /// <summary>
-        /// btnTimSach control.
+        /// btTraCuu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnTimSach;
+        protected global::System.Web.UI.WebControls.Button btTraCuu;
 
         /// <summary>
         /// gvsach control.

@@ -13,9 +13,7 @@ namespace BookStoreDB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
-     
+        }  
         protected void btnSave_Click1(object sender, EventArgs e)
         {
             string chuoi_ket_noi = ConfigurationManager.ConnectionStrings["BookStoreConnectionString"].ConnectionString;
