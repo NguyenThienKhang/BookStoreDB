@@ -1,7 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="BookStoreDB.Site1" %>
-
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
     <title></title>
@@ -35,21 +33,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="themsach.aspx">Thêm sách</a>
-            </li>
-        <%--    <li class="nav-item">
-                <a class="nav-link" href="ThemHoa.aspx">Thêm hoa</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="XemGioHang.aspx">Xem giỏ hàng</a>
-            </li>--%>
+            </li>        
         </ul>
     </nav>
-
-
-
-
-
-
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

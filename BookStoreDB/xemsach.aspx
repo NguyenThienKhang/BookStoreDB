@@ -15,34 +15,28 @@
                   </asp:Repeater>
               </ul>
           </div>
-
         <div class="col-md-9 row">
             <asp:Repeater runat="server" DataSourceID="dsSach">
                 <ItemTemplate>
-                    <div class="col-3">
-                        <img src="/Bia_sach/<%#Eval("Hinh") %>" alt="Alternate Text" /><br />
+                    <div class="col-4">
+                        <img src="/Bia_sach/<%#Eval("Hinh") %>" alt="Alternate Text" /><br /> <br /> 
+                       <asp:Button ID="btnMua" runat="server" CssClass="btn btn-success" Text="Đặt mua" /><br />
                        <span><%# Eval("TenSach") %></span><br />
-                       Đơn giá:<span><%# Eval("Dongia") %></span><br />
-                       <asp:Button ID="btnMua" runat="server" CssClass="btn btn-success" Text="Đặt mua" />
-
+                       Đơn giá:<span class="text-danger"><%# Eval("Dongia") %></span><br />
                     </div>
                 </ItemTemplate>
             </asp:Repeater>
-
         </div>
-
-
     </div>
     <asp:SqlDataSource ID="dsChuDe" runat="server"
         ConnectionString="<%$ ConnectionStrings:BookStoreConnectionString %>"
         ProviderName="<%$ ConnectionStrings:BookStoreConnectionString.ProviderName %>" 
         SelectCommand="SELECT * FROM [ChuDe]">
     </asp:SqlDataSource>
-
+    <%--Lấy sách theo macd--%>
     <asp:SqlDataSource ID="dsSach" runat="server" ConnectionString="<%$ ConnectionStrings:BookStoreConnectionString %>" SelectCommand="SELECT * FROM [Sach] WHERE ([MaCD] = @MaCD)">
         <SelectParameters>
             <asp:QueryStringParameter DefaultValue="5" Name="MaCD" QueryStringField="macd" Type="Int32" />
         </SelectParameters>
-
     </asp:SqlDataSource>
 </asp:Content>
